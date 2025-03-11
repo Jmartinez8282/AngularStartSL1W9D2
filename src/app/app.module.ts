@@ -5,6 +5,9 @@ import { ProductListComponent } from './products/product-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PublicRoutingModule } from './public/public-routing.module';
 import { PublicModule } from './public/public.module';
+import { FormsModule } from '@angular/forms';
+import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { StarComponent } from './shared/star.component';
 
 
 
@@ -14,7 +17,8 @@ import { PublicModule } from './public/public.module';
   declarations: [
     AppComponent,
     ProductListComponent,
-
+    ConvertToSpacesPipe,
+    StarComponent
 
 
 
@@ -22,7 +26,8 @@ import { PublicModule } from './public/public.module';
   imports: [
     PublicModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })
