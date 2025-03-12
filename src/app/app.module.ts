@@ -8,6 +8,8 @@ import { PublicModule } from './public/public.module';
 import { FormsModule } from '@angular/forms';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/star.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ProductDetailComponent } from './products/product-detail.component'
 
 
 
@@ -18,7 +20,8 @@ import { StarComponent } from './shared/star.component';
     AppComponent,
     ProductListComponent,
     ConvertToSpacesPipe,
-    StarComponent
+    StarComponent,
+    ProductDetailComponent
 
 
 
@@ -27,7 +30,8 @@ import { StarComponent } from './shared/star.component';
     PublicModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
